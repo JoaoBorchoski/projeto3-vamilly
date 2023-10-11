@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Forms</title>
+    </head>
+    <body>
+        <header>
+            <h1>Crie e compartilhe seu evento.</h1>
+            <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
+        </header>
+        <main>
+            <form class="form" action="submit">
+                <h2>Informações do Evento</h2>
+                <section>
+                    <label for="event_title"
+                        >Título do evento (mínimo 8 caracteres)</label
+                    >
+                    <input id="event_title" type="text" />
+                </section>
+                <section>
+                    <label for="event_link"
+                        >Link do evento (comece com https://)</label
+                    >
+                    <input id="event_link" type="text" />
+                </section>
+                <section>
+                    <label for="wpp"
+                        >Whatsapp para contato (somente números)</label
+                    >
+                    <input id="wpp" type="number" />
+                </section>
+                <section>
+                    <label for="extra_infos">Informações extras</label>
+                    <textarea
+                        name=""
+                        id="extra_infos"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                </section>
+                <section>
+                    <p>Categoria</p>
+                    <select name="" id="category">
+                        <option value="none">Tipo do evento</option>
+                    </select>
+                </section>
+                <h2>Privacidade</h2>
+                <section>
+                    <label for="admin_mail"
+                        >E-mail do administrador (digite um email válido)</label
+                    >
+                    <input id="admin_mail" type="email" />
+                </section>
+                <section>
+                    <label for="access_password"
+                        >Senha de acesso para os participantes (mínimo 8
+                        caracteres)</label
+                    >
+                    <input id="access_password" type="password" />
+                </section>
+                <span>
+                    <label for="is_private">Evento Privado</label>
+                    <input id="is_private" type="checkbox" />
+                </span>
+                <h2>Dia e Hora</h2>
+                <section class="special_section">
+                    <section>
+                        <label for="date">Data</label>
+                        <input type="date" name="" id="date" />
+                    </section>
+                    <section>
+                        <p>Das</p>
+                        <select name="" id="since">
+                            <option value="19">19:00</option>
+                            <option value="20">20:00</option>
+                            <option value="21">21:00</option>
+                        </select>
+                    </section>
+                    <section>
+                        <p>Até</p>
+                        <select name="" id="until">
+                            <option value="22">22:00</option>
+                            <option value="23">23:00</option>
+                            <option value="00">00:00</option>
+                        </select>
+                    </section>
+                </section>
+                <div><button>Salvar evento</button></div>
+            </form>
+        </main>
+    </body>
+</html>
